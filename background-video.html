@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>W.Marczak - Portfolio</title>
+	<meta name="author" content="Wojciech Marczak" />
+	<meta name="description" content="Wojciech Marczak Front-End Developer Portfolio" />
+	<meta name="keywords" content="fullpage.js, Portfolio, projects, Front-End Developer" />
+	<meta name="Resource-type" content="Document" />
+	<link rel="stylesheet" type="text/css"
+		href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/4.0.11/fullpage.min.css" />
+	<link rel="stylesheet" type="text/css" href="css/reset.css" />
+	<link rel="stylesheet" type="text/css" href="css/video.css" />
+	<link rel="stylesheet" type="text/css" href="css/section_0.css" />
+	<link rel="stylesheet" type="text/css" href="css/section_1.css" />
+	<link rel="stylesheet" type="text/css" href="css/section_2css" />
+	<link rel="stylesheet" type="text/css" href="css/section_3.css" />
+	<link rel="stylesheet" type="text/css" href="css/examples.css" />
+</head>
+
+<body>
+
+	<ul id="menu">
+		<li data-menuanchor="firstPage" class="active"><a href="#Welcome">First slide</a></li>
+		<li data-menuanchor="secondPage"><a href="#secondPage">Second slide</a></li>
+		<li data-menuanchor="3rdPage"><a href="#3rdPage">Third slide</a></li>
+		<li data-menuanchor="4thPage"><a href="#4thPage">Fourth slide</a></li>
+	</ul>
+
+
+
+	<div id="fullpage">
+		<div class="section " id="section0">
+			<video id="myVideo" loop muted data-autoplay playsinline>
+				<source src="resources/video/WQHD/bg_section_1.mp4" type="video/mp4"
+					media="all and (min-width: 1440px)">
+				<source src="resources/video/bg_section_1.mp4" type="video/mp4" media="all and (min-width: 1080px)">
+				<source src="resources/video/bg_section_1.mp4" type="video/mp4">
+			</video>
+			<div class="layer">
+				<div class="devname devname--main">
+					<h1>fullPage.js videos</h1>
+					<p>Don't forget to add "playsinline" attribute to make it work on phones</p>
+				</div>
+			</div>
+		</div>
+		<div class="section" id="section1">
+			<div class="slide" id="slide1">
+				<h1>Slide Backgrounds</h1>
+			</div>
+			<div class="slide" id="slide2">
+				<h1>Totally customizable</h1>
+			</div>
+		</div>
+		<div class="section" id="section2">
+			<h1>Lovely images <br />for a lovely page</h1>
+		</div>
+	</div>
+
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/4.0.11/fullpage.js"></script>
+
+	<script type="text/javascript">
+		var myFullpage = new fullpage('#fullpage', {
+			sectionsColor: ['#1bbc9b', '#4BBFC3', '#7BAABE'],
+			anchors: ['Welcome', 'secondPage', '3rdPage', '4thPage', 'lastPage'],
+			menu: '#menu',
+			slidesNavigation: true,
+			lazyLoad: true,
+			credits: { enabled: false },
+			gplv3-license:,
+		});
+	</script>
+
+</body>
+
+</html>
